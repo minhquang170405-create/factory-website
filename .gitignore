@@ -1,0 +1,12 @@
+# Large source assets not needed for the deployed site
+*.pdf
+factory website photos/
+*_template.png
+temporary screenshots/
+
+# Dev-only tooling
+serve.mjs
+screenshot.mjs
+CLAUDE.md
+.claude/
+node_modules/
