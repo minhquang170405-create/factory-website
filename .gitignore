@@ -1,5 +1,6 @@
 # Large source assets not needed for the deployed site
 *.pdf
+!brochure/*.pdf
 factory website photos/
 *_template.png
 temporary screenshots/
