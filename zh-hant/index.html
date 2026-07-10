@@ -21,6 +21,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>越南廠房出租 – 平陽保邦（胡志明市）| Đất Việt Hai</title>
 <meta name="description" content="越南平陽保邦全新廠房出租：面積 3,000–5,424 平方米，法律文件齊全，消防合規，隨時交付。歡迎聯繫獲取報價。">
+<meta name="keywords" content="thuê xưởng, thuê xưởng Bình Dương, cho thuê nhà xưởng, thuê nhà xưởng Hồ Chí Minh, nhà xưởng Bàu Bàng, warehouse rental Bình Dương, warehouse for rent Ho Chi Minh, factory for lease Vietnam">
 <link rel="canonical" href="https://datviet2.info/zh-hant/">
 <link rel="alternate" hreflang="vi" href="https://datviet2.info/">
 <link rel="alternate" hreflang="en" href="https://datviet2.info/en/">
@@ -40,6 +41,7 @@
   "@id": "https://datviet2.info/#business",
   "name": "越南 Đất Việt Hai 工業區 – 廠房出租",
   "description": "越南平陽保邦全新廠房出租 – 10 座廠房 3,000–5,424 平方米，總出租面積 55,000 平方米。",
+  "keywords": "thuê xưởng, thuê xưởng Bình Dương, cho thuê nhà xưởng, thuê nhà xưởng Hồ Chí Minh, warehouse rental Bình Dương, warehouse for rent Ho Chi Minh",
   "url": "https://datviet2.info/zh-hant/",
   "telephone": "+84913902897",
   "email": "vophien@datviet2.com",
@@ -992,6 +994,23 @@ footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
 .infra-badge svg { width: 21px; height: 21px; }
 .infra-body { padding: 18px 20px 22px; }
 .lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 9999; align-items: center; justify-content: center; padding: 32px; }
+
+/* Back to top */
+.to-top {
+  position: fixed; right: 22px; bottom: 22px; z-index: 900;
+  width: 46px; height: 46px; border-radius: 50%;
+  background: #e31e24; color: #fff; border: none; cursor: pointer;
+  font-size: 1.1rem; line-height: 1;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.22);
+  opacity: 0; visibility: hidden; transform: translateY(12px);
+  transition: opacity 0.25s, transform 0.25s, visibility 0.25s, background 0.2s;
+}
+.to-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+.to-top:hover { background: #b91419; }
+@media (max-width: 600px) {
+  .to-top { right: 14px; bottom: 14px; width: 42px; height: 42px; }
+}
 .lightbox.open { display: flex; }
 .lightbox img { max-width: 100%; max-height: 100%; border-radius: 6px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
 .lightbox-close { position: absolute; top: 20px; right: 24px; background: transparent; border: none; color: #fff; font-size: 2.2rem; line-height: 1; cursor: pointer; }
@@ -1517,6 +1536,10 @@ footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
   <div class="foot-bottom" data-key="foot-copy">© 2026 Đất Việt Hai。版權所有。</div>
 </footer>
 
+<button type="button" class="to-top" id="toTop" aria-label="Lên đầu trang / Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+</button>
+
 <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
   <button class="lightbox-close" aria-label="Close" onclick="closeLightbox(event)">×</button>
   <img id="lightboxImg" src="" alt="">
@@ -1555,6 +1578,15 @@ function toggleWhList() {
   var t = LANG_DATA[currentLang][key];
   if (t) btn.innerHTML = t;
 }
+
+// Back-to-top visibility
+(function() {
+  var btn = document.getElementById('toTop');
+  if (!btn) return;
+  function onScroll() { btn.classList.toggle('show', window.scrollY > 400); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
 
 // Scroll reveal
 const obs = new IntersectionObserver((entries) => {
