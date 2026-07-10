@@ -5,6 +5,7 @@
     <loc>https://datviet2.info/</loc>
     <xhtml:link rel="alternate" hreflang="vi" href="https://datviet2.info/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datviet2.info/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datviet2.info/ja/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://datviet2.info/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://datviet2.info/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datviet2.info/"/>
@@ -13,6 +14,16 @@
     <loc>https://datviet2.info/en/</loc>
     <xhtml:link rel="alternate" hreflang="vi" href="https://datviet2.info/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datviet2.info/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datviet2.info/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://datviet2.info/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://datviet2.info/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datviet2.info/"/>
+  </url>
+  <url>
+    <loc>https://datviet2.info/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://datviet2.info/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datviet2.info/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datviet2.info/ja/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://datviet2.info/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://datviet2.info/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datviet2.info/"/>
@@ -21,6 +32,7 @@
     <loc>https://datviet2.info/zh-hant/</loc>
     <xhtml:link rel="alternate" hreflang="vi" href="https://datviet2.info/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datviet2.info/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datviet2.info/ja/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://datviet2.info/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://datviet2.info/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datviet2.info/"/>
@@ -29,6 +41,7 @@
     <loc>https://datviet2.info/zh-hans/</loc>
     <xhtml:link rel="alternate" hreflang="vi" href="https://datviet2.info/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://datviet2.info/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://datviet2.info/ja/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://datviet2.info/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://datviet2.info/zh-hans/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://datviet2.info/"/>

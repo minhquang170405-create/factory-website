@@ -2,7 +2,7 @@
 <html lang="zh-Hans"><head>
 <meta charset="UTF-8">
 <!-- Google tag (gtag.js) -->
-<script async="" src="https://scripts.clarity.ms/0.8.66/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/xj27d09jyv"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-52THQE9WNB"></script>
+<script async="" src="https://scripts.clarity.ms/0.8.67/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/xj27d09jyv"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-52THQE9WNB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -25,6 +25,7 @@
 <link rel="canonical" href="https://datviet2.info/zh-hans/">
 <link rel="alternate" hreflang="vi" href="https://datviet2.info/">
 <link rel="alternate" hreflang="en" href="https://datviet2.info/en/">
+<link rel="alternate" hreflang="ja" href="https://datviet2.info/ja/">
 <link rel="alternate" hreflang="zh-Hant" href="https://datviet2.info/zh-hant/">
 <link rel="alternate" hreflang="zh-Hans" href="https://datviet2.info/zh-hans/">
 <link rel="alternate" hreflang="x-default" href="https://datviet2.info/">
@@ -74,11 +75,12 @@
 }</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;family=Noto+Sans+TC:wght@400;500;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&amp;family=Noto+Sans+TC:wght@400;500;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 :root { --cjk-font: 'Noto Sans TC'; }
 html[lang="zh-Hans"] { --cjk-font: 'Noto Sans SC'; }
+html[lang="ja"] { --cjk-font: 'Noto Sans JP'; }
 html {
   scroll-behavior: smooth; font-size: 16px;
   overflow-x: hidden;
@@ -507,6 +509,7 @@ footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
 .lang-flag:focus-visible { outline: none; border-color: #e31e24; }
 .lang-flag.active { opacity: 1; border-color: rgba(227,30,36,0.5); background: rgba(227,30,36,0.08); }
 .lang-flag-img { display: none; width: 22px; height: 16px; object-fit: cover; border-radius: 2px; }
+.lang-flag-img[data-lang="ja"], .br-flag[data-lang="ja"] { outline: 1px solid #e0e0e0; outline-offset: -1px; }
 .lang-flag-text { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; color: #e31e24; }
 .foot-flags .lang-flag-text { color: rgba(255,255,255,0.75); }
 .foot-flags .lang-flag.active .lang-flag-text { color: #fff; }
@@ -1175,6 +1178,7 @@ footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
       <a class="lang-flag active" data-lang="cn" href="/zh-hans/" hreflang="zh-Hans" aria-label="简体中文" title="简体中文"><img class="lang-flag-img" data-lang="cn" alt="简体中文" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjREUyOTEwIi8+PHBvbHlnb24gcG9pbnRzPSI1LDIuMiA1Ljk1LDQuOSA4LjgsNC45IDYuNSw2LjYgNy40LDkuMyA1LDcuNiAyLjYsOS4zIDMuNSw2LjYgMS4yLDQuOSA0LjA1LDQuOSIgZmlsbD0iI0ZGREUwMCIvPjxwb2x5Z29uIHBvaW50cz0iMTAsMS40IDEwLjM1LDIuMSAxMS4xLDIuMSAxMC41LDIuNTUgMTAuNzUsMy4zIDEwLDIuODUgOS4yNSwzLjMgOS41LDIuNTUgOC45LDIuMSA5LjY1LDIuMSIgZmlsbD0iI0ZGREUwMCIvPjxwb2x5Z29uIHBvaW50cz0iMTEuNiwzLjYgMTEuOTUsNC4zIDEyLjcsNC4zIDEyLjEsNC43NSAxMi4zNSw1LjUgMTEuNiw1LjA1IDEwLjg1LDUuNSAxMS4xLDQuNzUgMTAuNSw0LjMgMTEuMjUsNC4zIiBmaWxsPSIjRkZERTAwIi8+PHBvbHlnb24gcG9pbnRzPSIxMS42LDYuNCAxMS45NSw3LjEgMTIuNyw3LjEgMTIuMSw3LjU1IDEyLjM1LDguMyAxMS42LDcuODUgMTAuODUsOC4zIDExLjEsNy41NSAxMC41LDcuMSAxMS4yNSw3LjEiIGZpbGw9IiNGRkRFMDAiLz48cG9seWdvbiBwb2ludHM9IjEwLDguNiAxMC4zNSw5LjMgMTEuMSw5LjMgMTAuNSw5Ljc1IDEwLjc1LDEwLjUgMTAsMTAuMDUgOS4yNSwxMC41IDkuNSw5Ljc1IDguOSw5LjMgOS42NSw5LjMiIGZpbGw9IiNGRkRFMDAiLz48L3N2Zz4="><span class="lang-flag-text">CN</span></a>
       <a class="lang-flag" data-lang="tw" href="/zh-hant/" hreflang="zh-Hant" aria-label="繁體中文" title="繁體中文"><img class="lang-flag-img" data-lang="tw" alt="繁體中文" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjRkUwMDAwIi8+PHJlY3Qgd2lkdGg9IjE1IiBoZWlnaHQ9IjEwLjc3IiBmaWxsPSIjMDAwMDk1Ii8+PGcgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNTUiPjxsaW5lIHgxPSI3LjUiIHkxPSIxIiB4Mj0iNy41IiB5Mj0iMi4zIi8+PGxpbmUgeDE9IjcuNSIgeTE9IjguMSIgeDI9IjcuNSIgeTI9IjkuNCIvPjxsaW5lIHgxPSIyLjYiIHkxPSI1LjQiIHgyPSIzLjkiIHkyPSI1LjQiLz48bGluZSB4MT0iMTEuMSIgeTE9IjUuNCIgeDI9IjEyLjQiIHkyPSI1LjQiLz48bGluZSB4MT0iNC4yIiB5MT0iMi4xIiB4Mj0iNS4xIiB5Mj0iMyIvPjxsaW5lIHgxPSI5LjkiIHkxPSI3LjgiIHgyPSIxMC44IiB5Mj0iOC43Ii8+PGxpbmUgeDE9IjEwLjgiIHkxPSIyLjEiIHgyPSI5LjkiIHkyPSIzIi8+PGxpbmUgeDE9IjUuMSIgeTE9IjcuOCIgeDI9IjQuMiIgeTI9IjguNyIvPjxsaW5lIHgxPSI1LjQiIHkxPSIxLjciIHgyPSI2IiB5Mj0iMi45Ii8+PGxpbmUgeDE9IjkiIHkxPSI3LjkiIHgyPSI5LjYiIHkyPSI5LjEiLz48bGluZSB4MT0iOS42IiB5MT0iMS43IiB4Mj0iOSIgeTI9IjIuOSIvPjxsaW5lIHgxPSI2IiB5MT0iNy45IiB4Mj0iNS40IiB5Mj0iOS4xIi8+PC9nPjxjaXJjbGUgY3g9IjcuNSIgY3k9IjUuNCIgcj0iMyIgZmlsbD0iIzAwMDA5NSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNiIvPjxjaXJjbGUgY3g9IjcuNSIgY3k9IjUuNCIgcj0iMS41IiBmaWxsPSIjZmZmIi8+PC9zdmc+"><span class="lang-flag-text">TW</span></a>
       <a class="lang-flag" data-lang="en" href="/en/" hreflang="en" aria-label="English" title="English"><img class="lang-flag-img" data-lang="en" alt="English" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZmZmIi8+PGcgZmlsbD0iI0IyMjIzNCI+PHJlY3QgeT0iMCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEuNTQiLz48cmVjdCB5PSIzLjA4IiB3aWR0aD0iMzAiIGhlaWdodD0iMS41NCIvPjxyZWN0IHk9IjYuMTUiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxLjU0Ii8+PHJlY3QgeT0iOS4yMyIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEuNTQiLz48cmVjdCB5PSIxMi4zMSIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEuNTQiLz48cmVjdCB5PSIxNS4zOCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEuNTQiLz48cmVjdCB5PSIxOC40NiIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEuNTQiLz48L2c+PHJlY3Qgd2lkdGg9IjEzIiBoZWlnaHQ9IjEwLjc3IiBmaWxsPSIjM0MzQjZFIi8+PGcgZmlsbD0iI2ZmZiI+PGNpcmNsZSBjeD0iMiIgY3k9IjEuNSIgcj0iMC41Ii8+PGNpcmNsZSBjeD0iNC41IiBjeT0iMS41IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI3IiBjeT0iMS41IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI5LjUiIGN5PSIxLjUiIHI9IjAuNSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMS41IiByPSIwLjUiLz48Y2lyY2xlIGN4PSIzLjI1IiBjeT0iMy4yIiByPSIwLjUiLz48Y2lyY2xlIGN4PSI1Ljc1IiBjeT0iMy4yIiByPSIwLjUiLz48Y2lyY2xlIGN4PSI4LjI1IiBjeT0iMy4yIiByPSIwLjUiLz48Y2lyY2xlIGN4PSIxMC43NSIgY3k9IjMuMiIgcj0iMC41Ii8+PGNpcmNsZSBjeD0iMiIgY3k9IjQuOSIgcj0iMC41Ii8+PGNpcmNsZSBjeD0iNC41IiBjeT0iNC45IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI3IiBjeT0iNC45IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI5LjUiIGN5PSI0LjkiIHI9IjAuNSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iNC45IiByPSIwLjUiLz48Y2lyY2xlIGN4PSIzLjI1IiBjeT0iNi42IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI1Ljc1IiBjeT0iNi42IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI4LjI1IiBjeT0iNi42IiByPSIwLjUiLz48Y2lyY2xlIGN4PSIxMC43NSIgY3k9IjYuNiIgcj0iMC41Ii8+PGNpcmNsZSBjeD0iMiIgY3k9IjguMyIgcj0iMC41Ii8+PGNpcmNsZSBjeD0iNC41IiBjeT0iOC4zIiByPSIwLjUiLz48Y2lyY2xlIGN4PSI3IiBjeT0iOC4zIiByPSIwLjUiLz48Y2lyY2xlIGN4PSI5LjUiIGN5PSI4LjMiIHI9IjAuNSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iOC4zIiByPSIwLjUiLz48L2c+PC9zdmc+"><span class="lang-flag-text">EN</span></a>
+      <a class="lang-flag" data-lang="ja" href="/ja/" hreflang="ja" aria-label="日本語" title="日本語"><img class="lang-flag-img" data-lang="ja" alt="日本語" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iMTUiIGN5PSIxMCIgcj0iNiIgZmlsbD0iI2JjMDAyZCIvPjwvc3ZnPg=="><span class="lang-flag-text">JP</span></a>
       <a class="lang-flag" data-lang="vi" href="/" hreflang="vi" aria-label="Tiếng Việt" title="Tiếng Việt"><img class="lang-flag-img" data-lang="vi" alt="Tiếng Việt" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjREEyNTFEIi8+PHBvbHlnb24gcG9pbnRzPSIxNSw0IDE2Ljc2LDkuNTMgMjIuNSw5LjUzIDE3Ljg3LDEyLjk0IDE5LjYzLDE4LjQ3IDE1LDE1LjA2IDEwLjM3LDE4LjQ3IDEyLjEzLDEyLjk0IDcuNSw5LjUzIDEzLjI0LDkuNTMiIGZpbGw9IiNGRkZGMDAiLz48L3N2Zz4="><span class="lang-flag-text">VN</span></a>
     </div>
     <a href="#contact" class="nav-cta" data-key="nav-contact">联系</a>
@@ -1524,6 +1528,7 @@ footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
             <a class="lang-flag active" data-lang="cn" href="/zh-hans/" hreflang="zh-Hans" aria-label="简体中文" title="简体中文"><img class="lang-flag-img" data-lang="cn" alt="简体中文" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjREUyOTEwIi8+PHBvbHlnb24gcG9pbnRzPSI1LDIuMiA1Ljk1LDQuOSA4LjgsNC45IDYuNSw2LjYgNy40LDkuMyA1LDcuNiAyLjYsOS4zIDMuNSw2LjYgMS4yLDQuOSA0LjA1LDQuOSIgZmlsbD0iI0ZGREUwMCIvPjxwb2x5Z29uIHBvaW50cz0iMTAsMS40IDEwLjM1LDIuMSAxMS4xLDIuMSAxMC41LDIuNTUgMTAuNzUsMy4zIDEwLDIuODUgOS4yNSwzLjMgOS41LDIuNTUgOC45LDIuMSA5LjY1LDIuMSIgZmlsbD0iI0ZGREUwMCIvPjxwb2x5Z29uIHBvaW50cz0iMTEuNiwzLjYgMTEuOTUsNC4zIDEyLjcsNC4zIDEyLjEsNC43NSAxMi4zNSw1LjUgMTEuNiw1LjA1IDEwLjg1LDUuNSAxMS4xLDQuNzUgMTAuNSw0LjMgMTEuMjUsNC4zIiBmaWxsPSIjRkZERTAwIi8+PHBvbHlnb24gcG9pbnRzPSIxMS42LDYuNCAxMS45NSw3LjEgMTIuNyw3LjEgMTIuMSw3LjU1IDEyLjM1LDguMyAxMS42LDcuODUgMTAuODUsOC4zIDExLjEsNy41NSAxMC41LDcuMSAxMS4yNSw3LjEiIGZpbGw9IiNGRkRFMDAiLz48cG9seWdvbiBwb2ludHM9IjEwLDguNiAxMC4zNSw5LjMgMTEuMSw5LjMgMTAuNSw5Ljc1IDEwLjc1LDEwLjUgMTAsMTAuMDUgOS4yNSwxMC41IDkuNSw5Ljc1IDguOSw5LjMgOS42NSw5LjMiIGZpbGw9IiNGRkRFMDAiLz48L3N2Zz4="><span class="lang-flag-text">CN</span></a>
             <a class="lang-flag" data-lang="tw" href="/zh-hant/" hreflang="zh-Hant" aria-label="繁體中文" title="繁體中文"><img class="lang-flag-img" data-lang="tw" alt="繁體中文" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjRkUwMDAwIi8+PHJlY3Qgd2lkdGg9IjE1IiBoZWlnaHQ9IjEwLjc3IiBmaWxsPSIjMDAwMDk1Ii8+PGcgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNTUiPjxsaW5lIHgxPSI3LjUiIHkxPSIxIiB4Mj0iNy41IiB5Mj0iMi4zIi8+PGxpbmUgeDE9IjcuNSIgeTE9IjguMSIgeDI9IjcuNSIgeTI9IjkuNCIvPjxsaW5lIHgxPSIyLjYiIHkxPSI1LjQiIHgyPSIzLjkiIHkyPSI1LjQiLz48bGluZSB4MT0iMTEuMSIgeTE9IjUuNCIgeDI9IjEyLjQiIHkyPSI1LjQiLz48bGluZSB4MT0iNC4yIiB5MT0iMi4xIiB4Mj0iNS4xIiB5Mj0iMyIvPjxsaW5lIHgxPSI5LjkiIHkxPSI3LjgiIHgyPSIxMC44IiB5Mj0iOC43Ii8+PGxpbmUgeDE9IjEwLjgiIHkxPSIyLjEiIHgyPSI5LjkiIHkyPSIzIi8+PGxpbmUgeDE9IjUuMSIgeTE9IjcuOCIgeDI9IjQuMiIgeTI9IjguNyIvPjxsaW5lIHgxPSI1LjQiIHkxPSIxLjciIHgyPSI2IiB5Mj0iMi45Ii8+PGxpbmUgeDE9IjkiIHkxPSI3LjkiIHgyPSI5LjYiIHkyPSI5LjEiLz48bGluZSB4MT0iOS42IiB5MT0iMS43IiB4Mj0iOSIgeTI9IjIuOSIvPjxsaW5lIHgxPSI2IiB5MT0iNy45IiB4Mj0iNS40IiB5Mj0iOS4xIi8+PC9nPjxjaXJjbGUgY3g9IjcuNSIgY3k9IjUuNCIgcj0iMyIgZmlsbD0iIzAwMDA5NSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNiIvPjxjaXJjbGUgY3g9IjcuNSIgY3k9IjUuNCIgcj0iMS41IiBmaWxsPSIjZmZmIi8+PC9zdmc+"><span class="lang-flag-text">TW</span></a>
             <a class="lang-flag" data-lang="en" href="/en/" hreflang="en" aria-label="English" title="English"><img class="lang-flag-img" data-lang="en" alt="English" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZmZmIi8+PGcgZmlsbD0iI0IyMjIzNCI+PHJlY3QgeT0iMCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEuNTQiLz48cmVjdCB5PSIzLjA4IiB3aWR0aD0iMzAiIGhlaWdodD0iMS41NCIvPjxyZWN0IHk9IjYuMTUiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxLjU0Ii8+PHJlY3QgeT0iOS4yMyIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEuNTQiLz48cmVjdCB5PSIxMi4zMSIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEuNTQiLz48cmVjdCB5PSIxNS4zOCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEuNTQiLz48cmVjdCB5PSIxOC40NiIgd2lkdGg9IjMwIiBoZWlnaHQ9IjEuNTQiLz48L2c+PHJlY3Qgd2lkdGg9IjEzIiBoZWlnaHQ9IjEwLjc3IiBmaWxsPSIjM0MzQjZFIi8+PGcgZmlsbD0iI2ZmZiI+PGNpcmNsZSBjeD0iMiIgY3k9IjEuNSIgcj0iMC41Ii8+PGNpcmNsZSBjeD0iNC41IiBjeT0iMS41IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI3IiBjeT0iMS41IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI5LjUiIGN5PSIxLjUiIHI9IjAuNSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMS41IiByPSIwLjUiLz48Y2lyY2xlIGN4PSIzLjI1IiBjeT0iMy4yIiByPSIwLjUiLz48Y2lyY2xlIGN4PSI1Ljc1IiBjeT0iMy4yIiByPSIwLjUiLz48Y2lyY2xlIGN4PSI4LjI1IiBjeT0iMy4yIiByPSIwLjUiLz48Y2lyY2xlIGN4PSIxMC43NSIgY3k9IjMuMiIgcj0iMC41Ii8+PGNpcmNsZSBjeD0iMiIgY3k9IjQuOSIgcj0iMC41Ii8+PGNpcmNsZSBjeD0iNC41IiBjeT0iNC45IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI3IiBjeT0iNC45IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI5LjUiIGN5PSI0LjkiIHI9IjAuNSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iNC45IiByPSIwLjUiLz48Y2lyY2xlIGN4PSIzLjI1IiBjeT0iNi42IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI1Ljc1IiBjeT0iNi42IiByPSIwLjUiLz48Y2lyY2xlIGN4PSI4LjI1IiBjeT0iNi42IiByPSIwLjUiLz48Y2lyY2xlIGN4PSIxMC43NSIgY3k9IjYuNiIgcj0iMC41Ii8+PGNpcmNsZSBjeD0iMiIgY3k9IjguMyIgcj0iMC41Ii8+PGNpcmNsZSBjeD0iNC41IiBjeT0iOC4zIiByPSIwLjUiLz48Y2lyY2xlIGN4PSI3IiBjeT0iOC4zIiByPSIwLjUiLz48Y2lyY2xlIGN4PSI5LjUiIGN5PSI4LjMiIHI9IjAuNSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iOC4zIiByPSIwLjUiLz48L2c+PC9zdmc+"><span class="lang-flag-text">EN</span></a>
+      <a class="lang-flag" data-lang="ja" href="/ja/" hreflang="ja" aria-label="日本語" title="日本語"><img class="lang-flag-img" data-lang="ja" alt="日本語" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iMTUiIGN5PSIxMCIgcj0iNiIgZmlsbD0iI2JjMDAyZCIvPjwvc3ZnPg=="><span class="lang-flag-text">JP</span></a>
             <a class="lang-flag" data-lang="vi" href="/" hreflang="vi" aria-label="Tiếng Việt" title="Tiếng Việt"><img class="lang-flag-img" data-lang="vi" alt="Tiếng Việt" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjREEyNTFEIi8+PHBvbHlnb24gcG9pbnRzPSIxNSw0IDE2Ljc2LDkuNTMgMjIuNSw5LjUzIDE3Ljg3LDEyLjk0IDE5LjYzLDE4LjQ3IDE1LDE1LjA2IDEwLjM3LDE4LjQ3IDEyLjEzLDEyLjk0IDcuNSw5LjUzIDEzLjI0LDkuNTMiIGZpbGw9IiNGRkZGMDAiLz48L3N2Zz4="><span class="lang-flag-text">VN</span></a>
           </li>
         </ul>
@@ -1550,6 +1555,7 @@ footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
 <script>
 const HERO_SLIDES = ['/images/hero-1.webp','/images/hero-2.webp','/images/hero-3.webp'];
 var FLAG_SRC = {
+  ja: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iMTUiIGN5PSIxMCIgcj0iNiIgZmlsbD0iI2JjMDAyZCIvPjwvc3ZnPg==",
   cn: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjREUyOTEwIi8+PHBvbHlnb24gcG9pbnRzPSI1LDIuMiA1Ljk1LDQuOSA4LjgsNC45IDYuNSw2LjYgNy40LDkuMyA1LDcuNiAyLjYsOS4zIDMuNSw2LjYgMS4yLDQuOSA0LjA1LDQuOSIgZmlsbD0iI0ZGREUwMCIvPjxwb2x5Z29uIHBvaW50cz0iMTAsMS40IDEwLjM1LDIuMSAxMS4xLDIuMSAxMC41LDIuNTUgMTAuNzUsMy4zIDEwLDIuODUgOS4yNSwzLjMgOS41LDIuNTUgOC45LDIuMSA5LjY1LDIuMSIgZmlsbD0iI0ZGREUwMCIvPjxwb2x5Z29uIHBvaW50cz0iMTEuNiwzLjYgMTEuOTUsNC4zIDEyLjcsNC4zIDEyLjEsNC43NSAxMi4zNSw1LjUgMTEuNiw1LjA1IDEwLjg1LDUuNSAxMS4xLDQuNzUgMTAuNSw0LjMgMTEuMjUsNC4zIiBmaWxsPSIjRkZERTAwIi8+PHBvbHlnb24gcG9pbnRzPSIxMS42LDYuNCAxMS45NSw3LjEgMTIuNyw3LjEgMTIuMSw3LjU1IDEyLjM1LDguMyAxMS42LDcuODUgMTAuODUsOC4zIDExLjEsNy41NSAxMC41LDcuMSAxMS4yNSw3LjEiIGZpbGw9IiNGRkRFMDAiLz48cG9seWdvbiBwb2ludHM9IjEwLDguNiAxMC4zNSw5LjMgMTEuMSw5LjMgMTAuNSw5Ljc1IDEwLjc1LDEwLjUgMTAsMTAuMDUgOS4yNSwxMC41IDkuNSw5Ljc1IDguOSw5LjMgOS42NSw5LjMiIGZpbGw9IiNGRkRFMDAiLz48L3N2Zz4=",
   tw: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjRkUwMDAwIi8+PHJlY3Qgd2lkdGg9IjE1IiBoZWlnaHQ9IjEwLjc3IiBmaWxsPSIjMDAwMDk1Ii8+PGcgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNTUiPjxsaW5lIHgxPSI3LjUiIHkxPSIxIiB4Mj0iNy41IiB5Mj0iMi4zIi8+PGxpbmUgeDE9IjcuNSIgeTE9IjguMSIgeDI9IjcuNSIgeTI9IjkuNCIvPjxsaW5lIHgxPSIyLjYiIHkxPSI1LjQiIHgyPSIzLjkiIHkyPSI1LjQiLz48bGluZSB4MT0iMTEuMSIgeTE9IjUuNCIgeDI9IjEyLjQiIHkyPSI1LjQiLz48bGluZSB4MT0iNC4yIiB5MT0iMi4xIiB4Mj0iNS4xIiB5Mj0iMyIvPjxsaW5lIHgxPSI5LjkiIHkxPSI3LjgiIHgyPSIxMC44IiB5Mj0iOC43Ii8+PGxpbmUgeDE9IjEwLjgiIHkxPSIyLjEiIHgyPSI5LjkiIHkyPSIzIi8+PGxpbmUgeDE9IjUuMSIgeTE9IjcuOCIgeDI9IjQuMiIgeTI9IjguNyIvPjxsaW5lIHgxPSI1LjQiIHkxPSIxLjciIHgyPSI2IiB5Mj0iMi45Ii8+PGxpbmUgeDE9IjkiIHkxPSI3LjkiIHgyPSI5LjYiIHkyPSI5LjEiLz48bGluZSB4MT0iOS42IiB5MT0iMS43IiB4Mj0iOSIgeTI9IjIuOSIvPjxsaW5lIHgxPSI2IiB5MT0iNy45IiB4Mj0iNS40IiB5Mj0iOS4xIi8+PC9nPjxjaXJjbGUgY3g9IjcuNSIgY3k9IjUuNCIgcj0iMyIgZmlsbD0iIzAwMDA5NSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjAuNiIvPjxjaXJjbGUgY3g9IjcuNSIgY3k9IjUuNCIgcj0iMS41IiBmaWxsPSIjZmZmIi8+PC9zdmc+",
   vi: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMCAyMCI+PHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjREEyNTFEIi8+PHBvbHlnb24gcG9pbnRzPSIxNSw0IDE2Ljc2LDkuNTMgMjIuNSw5LjUzIDE3Ljg3LDEyLjk0IDE5LjYzLDE4LjQ3IDE1LDE1LjA2IDEwLjM3LDE4LjQ3IDEyLjEzLDEyLjk0IDcuNSw5LjUzIDEzLjI0LDkuNTMiIGZpbGw9IiNGRkZGMDAiLz48L3N2Zz4=",
@@ -1815,6 +1821,114 @@ var LANG_DATA = {
     'cust-eyebrow': 'Featured clients', 'partner-eyebrow': 'Development partners',
     'foot-desc': 'Modern, flexible &amp; sustainable manufacturing space in Bau Bang, HCMC.', 'foot-links-h': 'Quick links', 'foot-copy': '© 2026 Đất Việt Hai. All rights reserved.'
   },
+  ja: {
+    'nav-intro': '概要', 'nav-scale': '規模', 'nav-location': '立地', 'nav-pricing': '賃料', 'nav-contact': 'お問い合わせ',
+    'stat-area': '総面積', 'stat-rent': '賃貸可能面積', 'stat-wh': '工場棟数',
+    'intro-label': '概要',
+    'intro-h2': 'ホーチミン市の現代的工業スペース',
+    'intro-p1': '<strong>タイズオン事業体</strong>による貸工場プロジェクトは、製造・物流の急成長拠点であるバウバン（ホーチミン市）に位置し、現代的な工業スペースソリューションを提供します。',
+    'intro-p2': '本プロジェクトは、製造・保管・物流に適した柔軟な規模の新築工場を提供します。隣接する複数棟を組み合わせて賃借することも可能です。',
+    'intro-p3': '最適化された設計と完備されたインフラにより、国内企業とFDI企業の双方に、柔軟でコスト効率が高く、すぐに稼働できる工業スペースを提供します。',
+    'intro-caption': '全体概観 – タイズオン事業体、バウバン',
+    'legal-label': '法的情報', 'legal-h2': '完全かつ透明な法的書類', 'legal-dev-l': '開発事業者',
+    'legal-td1-l': '事業者名', 'legal-td2-l': '事業主', 'legal-td3-l': '主要事業', 'legal-td4-l': '事業登録', 'legal-td5-l': '消防承認', 'legal-td6-l': '建築許可',
+    'legal-addr-l': '本社所在地', 'legal-addr-r': 'ベトナム、ビンズオン省バウバン県チュヴァントー社、地番1006（地図4・13）および地番291（地図52・3）',
+    'legal-td3-r': '工場賃貸', 'legal-td4-r': '第385号 – バウバン県人民委員会',
+    'legal-td5-r': '<span class="badge-ok">✓ 承認済</span>&nbsp; 第557/TD-PCCC号',
+    'legal-td6-r': '<span class="badge-ok">✓ 発行済</span>&nbsp; バウバン県人民委員会',
+    'legal-caption': '法的書類 – 許可証および消防承認',
+    'scale-label': '規模・面積', 'scale-h2': '工場10棟 – 総面積55,000㎡',
+    'metric-l1': '敷地総面積', 'metric-l2': '総賃貸面積', 'metric-l3': '工場棟数', 'metric-l4': '1棟あたり面積',
+    'scale-sublabel': '工場一覧',
+    'scale-subtext': '1棟単位でも、隣接棟と組み合わせても賃借可能で、生産ニーズに対応します。',
+    'wh-lbl': '工場', 'scale-caption': 'マスタープラン – 第1期（縮尺1/500）',
+    'aerial-label': 'プロジェクト俯瞰', 'aerial-h2': '科学的な配置計画と整備されたインフラ',
+    'aerial-p1': '敷地全体は綿密に計画され、幅広い場内道路によりコンテナトラックが円滑に通行できます。工場は並列配置され、物流と生産動線を最適化しています。',
+    'aerial-p2': '各工場の天井高は8〜12メートルで、大型機械や天井クレーンに十分対応。堅牢な鉄筋コンクリート＋鉄骨構造、断熱折板屋根、自然・機械換気システムを完備しています。',
+    'aerial-p3': '24時間警備、計量所、消防用貯水池、排水処理施設、専用駐車場を備えています。',
+    'aerial-caption': '鳥瞰図 – タイズオン工業団地',
+    'aerial2-label': '建築設計', 'aerial2-h2': '完備された技術インフラ',
+    'infra-i1': '<strong>天井高8〜12m</strong> – 大型機械、天井クレーン、ハイラック保管に対応',
+    'infra-i2': '<strong>100%新築工場</strong> – 堅牢な鉄筋コンクリート＋鉄骨構造、0.45mm折板屋根',
+    'infra-i3': '<strong>完備された消防システム</strong> – 自動スプリンクラー、火災報知器、屋外消火栓、避難対策',
+    'infra-i4': '<strong>三相電源</strong> – 専用変電所から直接接続、安定した生産用電力',
+    'infra-i5': '<strong>幅広い場内道路</strong> – アスファルト舗装、コンテナトラック双方向通行可',
+    'infra-i6': '<strong>排水処理</strong>、24時間警備、計量所、台湾製シャッター',
+    'aerial2-caption': '南側工場ゾーン – 07〜10号棟',
+    'loc-label': '立地・交通', 'loc-h2': '南部工業ハブ – 戦略的な連結性',
+    'loc-t1': '所在地',
+    'loc-d1': 'ベトナム、ホーチミン市チュヴァントー社ディンディエン村<br>地番287、地図24',
+    'loc-t2': '周辺工業団地', 'loc-d2': 'バウバン工業団地およびビンフオック省の工業団地へ迅速にアクセス',
+    'loc-t3': 'ホーチミン市', 'loc-d3': '国道13号線で直結。チュヴァントー社人民委員会の近く',
+    'loc-t4': '港湾アクセス',
+    'loc-d4': 'カットライ港：<strong style="color:#e31e24">45〜50 km</strong> · カイメップ＝チーバイ港湾群：<strong style="color:#e31e24">90 km</strong><br>ミーフオック＝タンヴァン幹線経由',
+    'loc-caption': '交通マップ – バウバン、ホーチミン市',
+    'price-label': '賃料', 'price-h2': '競争力のある価格、柔軟な交渉',
+    'price-unit': '/ ㎡ / 月 &nbsp;–&nbsp; 参考価格',
+    'price-note': '賃料は賃借面積、契約期間、テナントのご要望に応じて交渉可能です。柔軟な賃借形態 – 隣接する複数棟の組み合わせも可能です。',
+    'infra2-label': '技術インフラの引き渡し', 'infra2-h2': '追加投資不要 – すぐに稼働可能',
+    'infra2-i1': '三相電源完備、専用変電所から直接接続',
+    'infra2-i2': '継続的な生産を支える給水設備',
+    'infra2-i3': '消防システムは承認・設置済み',
+    'infra2-i4': '高耐荷重の工場床、フォークリフトや重機械に対応',
+    'infra2-i5': '地中ケーブルによるインターネット・通信インフラ',
+    'tl-label': 'プロジェクト工程', 'tl-h2': '2026年完成・引き渡し予定',
+    'tl-t1': '法的書類完了', 'tl-d1': '事業登録、建築許可、消防承認第557号',
+    'tl-t2': '第1期工事着工', 'tl-d2': '最初の6棟（01〜06号棟）と技術インフラの同時整備',
+    'tl-t3': '場内道路・付帯設備完成', 'tl-d3': 'アスファルト道路、排水、変電所、排水処理',
+    'tl-t4': '全10棟の引き渡し', 'tl-d4': '2026年に完成・稼働開始予定',
+    'tl-caption': 'プロジェクト完成予想図 – 最終工事段階の工場',
+    'contact-label': '連絡先', 'contact-h2': '今すぐお問い合わせください',
+    'c-type1': 'プロジェクトディレクター', 'c-type2': 'ホットライン', 'c-type3': 'メール', 'c-type4': '営業時間',
+    'foot-brand': 'タイズオン事業体',
+    'foot-text': 'プレミアム工業スペースソリューション · バウバン、ホーチミン市 · © 2025',
+    'topbar-text': 'タイズオン事業体 – バウバン（ホーチミン市）の貸工場ソリューション',
+    'tab-aerial': 'プロジェクト概観', 'tab-aerial2': 'インフラ', 'tab-location': '立地', 'tab-legal': '法務',
+    'foot-brand-full': 'タイズオン<span>事業体</span>',
+    'foot-addr': 'ベトナム、ホーチミン市チュヴァントー社',
+    'fcol1-h': '情報', 'fcol2-h': 'お問い合わせ',
+    'wh-card-t1': '工場ゾーン01〜06',
+    'wh-card-d1': '第1期 · 面積：約28,000㎡ · 2026年引き渡し予定',
+    'wh-card-t2': '工場ゾーン07〜10',
+    'wh-card-d2': '第2期 · 面積：約27,000㎡ · 2027年引き渡し予定',
+    'cf-success': 'ありがとうございます。24時間以内にご連絡いたします。',
+    'map-open': 'マップで開く',
+    'nav-logo': 'Đất Việt <span>Hai</span>', 'brand-name': '現代的工業スペース',
+    'hero-badge': '戦略的立地 – 優れた連結性', 'hero-h1': '現代的な<br><em>工業スペース</em>',
+    'hero-desc': 'ホーチミン市バウバンの現代的で柔軟かつ持続可能な生産スペース。', 'hero-btn': 'プロジェクトを見る →',
+    'nav-home': 'ホーム', 'nav-about': '概要', 'nav-infra': 'インフラ', 'nav-units': '空き工場', 'nav-news': 'ニュース',
+    'st-loc': '立地', 'st-loc-v': 'バウバン、ホーチミン市', 'st-scale': '規模', 'st-scale-v': '9ヘクタール',
+    'st-area': '工場面積', 'st-port': '港まで', 'st-port-v': 'カットライ港まで120分',
+    'st-power': '電力供給', 'st-power-v': '大容量、供給準備完了', 'st-legal': '法的状況', 'st-legal-v': '完備・透明',
+    'about-eyebrow': '概要', 'about-h2': 'Đất Việt Hai 現代的工業スペース',
+    'about-p': 'ホーチミン市バウバンの9ヘクタールの敷地に、Đất Việt Haiは整備されたインフラ、戦略的立地、企業に最適な投資環境を提供します。',
+    'ov1': 'ヘクタール · 総面積', 'ov2': '延べ床面積', 'ov3': '現代的工場', 'ov4': '完成・引き渡し予定',
+    'about-video': 'プロジェクト紹介動画', 'about-video-sub': 'Đất Việt Haiの全体像をご覧ください',
+    'why-eyebrow': 'Đất Việt Haiが選ばれる理由', 'why-h2': '企業にとっての際立った優位性',
+    'why1-t': '戦略的立地', 'why1-d': '港湾、空港、主要工業団地への便利な接続。',
+    'why2-t': '整備されたインフラ', 'why2-d': '電力・給水・消防・排水処理を完備し、すぐに稼働可能。',
+    'why3-t': '柔軟で多様', 'why3-d': '3,000〜5,000㎡の工場をニーズに合わせて。隣接棟の組み合わせも可能。',
+    'why4-t': '透明な法務', 'why4-d': '法的書類を完備し、迅速な手続きで投資家をサポート。', 'why-btn': 'プロジェクト詳細を見る →',
+    'infra-eyebrow': '標準インフラ', 'infra-h2': '完備された技術インフラ',
+    'infra1-t': '幅広い場内道路', 'infra1-d': '広々とした幹線道路でコンテナトラックも円滑に通行。',
+    'infra2-t': '安定した電力供給', 'infra2-d': '継続的な生産需要に対応。',
+    'infra3-t': '自動消防システム', 'infra3-d': '基準に適合した自動消火システム。',
+    'infra4-t': '給水設備', 'infra4-d': '清潔で安定した継続的な水源。',
+    'infra5-t': '排水処理', 'infra5-d': '環境基準に適合した最新の排水処理。',
+    'infra6-t': '24時間警備', 'infra6-d': '24時間の警備員と全域CCTV監視。', 'infra-btn': 'すべてのインフラを見る →',
+    'conn-eyebrow': '立地と連結性', 'conn-h2': '南部の工業ハブ',
+    'conn1': 'カットライ港まで120分', 'conn2': 'タンソンニャット空港まで120分', 'conn3': 'ミーフオック＝タンヴァン道路へ直接アクセス', 'conn4': '主要工業団地・クラスターに囲まれた立地',
+    'units-eyebrow': '空き工場', 'units-h2': '引き渡し準備完了', 'viewall': 'すべて見る →',
+    'wh-list-btn-show': '工場一覧を見る ↓', 'wh-list-btn-hide': '工場一覧を隠す ↑',
+    'unit1-t': '工場A1', 'unit2-t': '工場B2', 'unit-spec1': '事務所300㎡', 'unit-spec2': '天井高12m', 'unit-spec3': '自動消防設備', 'unit-btn': 'お問い合わせ →',
+    'news-eyebrow': '注目ニュース', 'news-h2': 'プロジェクト最新情報',
+    'news1-t': 'Đất Việt Hai – 投資家にとって魅力的な進出先', 'news2-t': 'Đất Việt Haiインフラ整備の進捗情報', 'news3-t': 'インフラ完成 – 企業の入居受け入れ準備完了',
+    'cta-eyebrow': 'お問い合わせ', 'cta-h': '貴社とともに歩む準備ができています',
+    'cta-sub': '専門チームが貴社に最適なソリューションをいつでもご提案いたします。', 'cta-btn': '今すぐお問い合わせ →',
+    'br-eyebrow': 'パンフレット', 'br-h': 'プロジェクト資料のダウンロード', 'br-desc': 'Đất Việt Hai工業団地プロジェクトの詳細資料をダウンロードできます。', 'br-dl': '⬇ ダウンロード', 'br-btn': '⬇ パンフレットをダウンロード',
+    'cust-eyebrow': '主要顧客', 'partner-eyebrow': '開発パートナー',
+    'foot-desc': 'ホーチミン市バウバンの現代的で柔軟かつ持続可能な生産スペース。', 'foot-links-h': 'クイックリンク', 'foot-copy': '© 2026 Đất Việt Hai. All rights reserved.'
+  },
   tw: {
     'nav-intro': '介紹', 'nav-scale': '規模', 'nav-location': '位置', 'nav-pricing': '租金', 'nav-contact': '聯絡',
     'stat-area': '總面積', 'stat-rent': '可租面積', 'stat-wh': '廠房',
@@ -2033,7 +2147,7 @@ var LANG_DATA = {
   }
 };
 
-var LANG_HTML = { vi: 'vi', en: 'en', tw: 'zh-Hant', cn: 'zh-Hans' };
+var LANG_HTML = { vi: 'vi', en: 'en', ja: 'ja', tw: 'zh-Hant', cn: 'zh-Hans' };
 var currentLang = 'cn';
 
 function setLang(lang) {
@@ -2050,6 +2164,11 @@ function setLang(lang) {
   document.querySelectorAll('.br-card').forEach(function(card) {
     card.classList.toggle('active', card.dataset.lang === lang);
   });
+  // Languages without their own PDF fall back to the English brochure
+  if (!document.querySelector('.br-card.active')) {
+    var enCard = document.querySelector('.br-card[data-lang="en"]');
+    if (enCard) enCard.classList.add('active');
+  }
 }
 
 // Mobile hamburger menu
