@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://datviet2.info/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://datviet2.info/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datviet2.info/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://datviet2.info/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://datviet2.info/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datviet2.info/"/>
+  </url>
+  <url>
+    <loc>https://datviet2.info/en/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://datviet2.info/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datviet2.info/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://datviet2.info/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://datviet2.info/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datviet2.info/"/>
+  </url>
+  <url>
+    <loc>https://datviet2.info/zh-hant/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://datviet2.info/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datviet2.info/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://datviet2.info/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://datviet2.info/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datviet2.info/"/>
+  </url>
+  <url>
+    <loc>https://datviet2.info/zh-hans/</loc>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://datviet2.info/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://datviet2.info/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://datviet2.info/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://datviet2.info/zh-hans/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://datviet2.info/"/>
+  </url>
+</urlset>
