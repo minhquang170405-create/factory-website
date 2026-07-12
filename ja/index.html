@@ -1036,6 +1036,8 @@ footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
 .viewall:hover { text-decoration: underline; }
 .wh-list-grid { display: none; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 28px; }
 .wh-list-grid.open { display: grid; }
+.units-content { display: none; margin-top: 28px; }
+.units-content.open { display: block; }
 .wh-item { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 18px 10px; text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
 .wh-item:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.08); }
 .wh-num { font-size: 1.5rem; font-weight: 800; color: #e31e24; }
@@ -1402,6 +1404,10 @@ footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
       </div>
       <a href="#contact" class="viewall" data-key="viewall">すべて見る →</a>
     </div>
+    <div class="s-center reveal">
+      <button type="button" class="dv-btn ghost" id="unitsBtn" data-key="units-btn-show" onclick="toggleUnits()">空き工場を見る ↓</button>
+    </div>
+    <div class="units-content" id="unitsContent">
     <div class="units-grid reveal">
       <div class="unit-card">
         <div class="unit-img"><img id="img-unit1" src="/images/aerial1.webp" loading="lazy" alt="バウバンの貸工場3,000㎡ – A1棟"></div>
@@ -1442,6 +1448,7 @@ footer p { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
       <div class="wh-item"><div class="wh-num">08</div><div class="wh-lbl" data-key="wh-lbl">工場</div><div class="wh-area">5.424 m²</div></div>
       <div class="wh-item"><div class="wh-num">09</div><div class="wh-lbl" data-key="wh-lbl">工場</div><div class="wh-area">3.696 m²</div></div>
       <div class="wh-item"><div class="wh-num">10</div><div class="wh-lbl" data-key="wh-lbl">工場</div><div class="wh-area">4.896 m²</div></div>
+    </div>
     </div>
   </div>
 </section>
@@ -1575,6 +1582,18 @@ function closeLightbox(e) {
   document.getElementById('lightbox').classList.remove('open');
 }
 
+var unitsOpen = false;
+function toggleUnits() {
+  unitsOpen = !unitsOpen;
+  var content = document.getElementById('unitsContent');
+  var btn = document.getElementById('unitsBtn');
+  content.classList.toggle('open', unitsOpen);
+  var key = unitsOpen ? 'units-btn-hide' : 'units-btn-show';
+  btn.dataset.key = key;
+  var t = LANG_DATA[currentLang][key];
+  if (t) btn.innerHTML = t;
+}
+
 var whListOpen = false;
 function toggleWhList() {
   whListOpen = !whListOpen;
@@ -1704,6 +1723,7 @@ var LANG_DATA = {
     'conn1': '120 phút đến Cảng Cát Lái', 'conn2': '120 phút đến Sân bay Tân Sơn Nhất', 'conn3': 'Kết nối trực tiếp đường Mỹ Phước – Tân Vạn', 'conn4': 'Bao quanh bởi các KCN và cụm công nghiệp lớn',
     'units-eyebrow': 'Xưởng còn trống', 'units-h2': 'Sẵn sàng bàn giao', 'viewall': 'Xem tất cả →',
     'wh-list-btn-show': 'Xem danh sách nhà xưởng ↓', 'wh-list-btn-hide': 'Ẩn danh sách nhà xưởng ↑',
+    'units-btn-show': 'Xem xưởng còn trống ↓', 'units-btn-hide': 'Ẩn xưởng còn trống ↑',
     'unit1-t': 'Xưởng A1', 'unit2-t': 'Xưởng B2', 'unit-spec1': 'Văn phòng 300m²', 'unit-spec2': 'Chiều cao 12m', 'unit-spec3': 'PCCC tự động', 'unit-btn': 'Liên hệ →',
     'news-eyebrow': 'Tin tức nổi bật', 'news-h2': 'Cập nhật dự án',
     'news1-t': 'Đất Việt Hai – Điểm đến hấp dẫn của nhà đầu tư', 'news2-t': 'Cập nhật tiến độ hạ tầng cụm công nghiệp Đất Việt Hai', 'news3-t': 'Hạ tầng hoàn thiện – Sẵn sàng đón doanh nghiệp',
@@ -1812,6 +1832,7 @@ var LANG_DATA = {
     'conn1': '120 mins to Cat Lai Port', 'conn2': '120 mins to Tan Son Nhat Airport', 'conn3': 'Direct access to My Phuoc – Tan Van road', 'conn4': 'Surrounded by major industrial zones and clusters',
     'units-eyebrow': 'Available units', 'units-h2': 'Ready for handover', 'viewall': 'View all →',
     'wh-list-btn-show': 'View warehouse list ↓', 'wh-list-btn-hide': 'Hide warehouse list ↑',
+    'units-btn-show': 'Show available units ↓', 'units-btn-hide': 'Hide available units ↑',
     'unit1-t': 'Factory A1', 'unit2-t': 'Factory B2', 'unit-spec1': 'Office 300m²', 'unit-spec2': 'Height 12m', 'unit-spec3': 'Auto fire protection', 'unit-btn': 'Contact us →',
     'news-eyebrow': 'Featured news', 'news-h2': 'Project updates',
     'news1-t': 'Dat Viet Hai – An attractive destination for investors', 'news2-t': 'Infrastructure progress update at Dat Viet Hai', 'news3-t': 'Infrastructure completed – Ready to welcome businesses',
@@ -1920,6 +1941,7 @@ var LANG_DATA = {
     'conn1': 'カットライ港まで120分', 'conn2': 'タンソンニャット空港まで120分', 'conn3': 'ミーフオック＝タンヴァン道路へ直接アクセス', 'conn4': '主要工業団地・クラスターに囲まれた立地',
     'units-eyebrow': '空き工場', 'units-h2': '引き渡し準備完了', 'viewall': 'すべて見る →',
     'wh-list-btn-show': '工場一覧を見る ↓', 'wh-list-btn-hide': '工場一覧を隠す ↑',
+    'units-btn-show': '空き工場を見る ↓', 'units-btn-hide': '空き工場を隠す ↑',
     'unit1-t': '工場A1', 'unit2-t': '工場B2', 'unit-spec1': '事務所300㎡', 'unit-spec2': '天井高12m', 'unit-spec3': '自動消防設備', 'unit-btn': 'お問い合わせ →',
     'news-eyebrow': '注目ニュース', 'news-h2': 'プロジェクト最新情報',
     'news1-t': 'Đất Việt Hai – 投資家にとって魅力的な進出先', 'news2-t': 'Đất Việt Haiインフラ整備の進捗情報', 'news3-t': 'インフラ完成 – 企業の入居受け入れ準備完了',
@@ -2028,6 +2050,7 @@ var LANG_DATA = {
     'conn1': '120 分鐘到吉萊港', 'conn2': '120 分鐘到新山一機場', 'conn3': '直接連接美福 – 新萬幹線', 'conn4': '周邊環繞大型工業區與工業群',
     'units-eyebrow': '空置廠房', 'units-h2': '隨時可交付', 'viewall': '查看全部 →',
     'wh-list-btn-show': '查看廠房清單 ↓', 'wh-list-btn-hide': '隱藏廠房清單 ↑',
+    'units-btn-show': '查看空置廠房 ↓', 'units-btn-hide': '隱藏空置廠房 ↑',
     'unit1-t': 'A1 廠房', 'unit2-t': 'B2 廠房', 'unit-spec1': '辦公室 300m²', 'unit-spec2': '高度 12m', 'unit-spec3': '自動消防', 'unit-btn': '聯絡我們 →',
     'news-eyebrow': '熱門新聞', 'news-h2': '專案動態',
     'news1-t': 'Đất Việt Hai – 投資者的理想目的地', 'news2-t': 'Đất Việt Hai 現代工業空間基礎設施進度更新', 'news3-t': '基礎設施完工 – 隨時迎接企業進駐',
@@ -2136,6 +2159,7 @@ var LANG_DATA = {
     'conn1': '120 分钟到吉莱港', 'conn2': '120 分钟到新山一机场', 'conn3': '直接连接美福 – 新万干线', 'conn4': '周边环绕大型工业区与工业群',
     'units-eyebrow': '空置厂房', 'units-h2': '随时可交付', 'viewall': '查看全部 →',
     'wh-list-btn-show': '查看厂房清单 ↓', 'wh-list-btn-hide': '隐藏厂房清单 ↑',
+    'units-btn-show': '查看空置厂房 ↓', 'units-btn-hide': '隐藏空置厂房 ↑',
     'unit1-t': 'A1 厂房', 'unit2-t': 'B2 厂房', 'unit-spec1': '办公室 300m²', 'unit-spec2': '高度 12m', 'unit-spec3': '自动消防', 'unit-btn': '联系我们 →',
     'news-eyebrow': '热门新闻', 'news-h2': '项目动态',
     'news1-t': 'Đất Việt Hai – 投资者的理想目的地', 'news2-t': 'Đất Việt Hai 现代工业空间基础设施进度更新', 'news3-t': '基础设施完工 – 随时迎接企业进驻',
