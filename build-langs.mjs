@@ -1,6 +1,6 @@
-// Prerender the EN / zh-Hant / zh-Hans static pages from the root (vi) index.html.
+// Prerender the EN / JA / zh-Hant / zh-Hans static pages from the root (vi) index.html.
 // Usage: start `node serve.mjs` first, then run `node build-langs.mjs`.
-// Output: en/index.html, zh-hant/index.html, zh-hans/index.html
+// Output: en/index.html, ja/index.html, zh-hant/index.html, zh-hans/index.html
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -129,6 +129,9 @@ for (const [lang, cfg] of Object.entries(LANGS)) {
       const el = document.getElementById(id);
       if (el) el.setAttribute('alt', alt);
     }
+    // Drop the Clarity tags injected at runtime; the inline bootstrap in <head> re-injects
+    // them once on the live page, so baking them in here would double-load Clarity.
+    document.querySelectorAll('script[src*="clarity.ms"]').forEach((el) => el.remove());
     // Reset runtime state so the page loads clean
     document.querySelectorAll('.reveal.in').forEach((el) => el.classList.remove('in'));
     document.querySelectorAll('#navMenu a.active').forEach((el) => el.classList.remove('active'));
